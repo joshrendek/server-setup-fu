@@ -1,6 +1,6 @@
 #!/bin/sh
 # Copyright 2009 Josh Rendek - BlueSripts.net
-# This installs A LOT of base stuff for rails, php, ruby gems, and lighttpd
+# This installs A LOT of base stuff for rails, php, ruby gems, lighttpd, git, rrdtool, mongrel and mongrel cluster
 # Installs rails v2.3.3 and 2.3.4 (or whatever is latest on gem)
 yum -y update
 yum -y install sysstat
