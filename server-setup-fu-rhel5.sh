@@ -3,8 +3,10 @@
 # This installs A LOT of base stuff for rails, php, ruby gems, lighttpd, git, rrdtool, mongrel and mongrel cluster
 # Installs rails v2.3.3 and 2.3.4 (or whatever is latest on gem)
 yum -y update
+yum -y install make
 yum -y install sysstat
 yum -y install font*
+yum -y install zip unzip
 yum -y install openssl*
 yum -y install getline*
 yum -y install readline*

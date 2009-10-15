@@ -10,6 +10,10 @@
 # config: /etc/sysconfig/lighttpd
 # pidfile: /var/run/lighttpd.pid
 #
+# # chmod a+rx /etc/init.d/lighttpd
+# chkconfig --add lighttpd
+# chkconfig lighttpd on
+#
 # Note: pidfile is assumed to be created
 # by lighttpd (config: server.pid-file).
 # If not, uncomment 'pidof' line.
