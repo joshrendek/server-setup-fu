@@ -7,6 +7,8 @@ yum -y install sysstat
 yum -y install font*
 yum -y install openssl*
 yum -y install getline*
+yum -y install readline*
+yum -y install ncurses*
 yum -y install get*
 yum -y install mysql*
 yum -y install gcc*
