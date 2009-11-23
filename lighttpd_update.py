@@ -22,7 +22,7 @@ print "Downloading latest release: " + latest_release
 filename = latest_release.split('/')[-1]
 folder = filename.split('.tar.gz')[0]
 
-os.popen("curl -O " + latest_release)
+output = os.popen("curl -O " + latest_release)
 
 print "Extracting to " + folder + " ... "
 os.popen("tar xzvf " + filename)
@@ -34,6 +34,6 @@ if check == '+':
 	
 # build it
 print "Building..."
-output = os.popen("cd " + folder + "; ./configure " + compile_flags + "; make; make install;").read()
+output = os.popen("export LUA_CFLAGS='-I/usr/local/include'; export LUA_LIBS='-L/usr/local/lib -llua'; cd " + folder + "; ./configure " + compile_flags + "; make; make install;").read()
 
 print "Finished updating!"
