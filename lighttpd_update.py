@@ -22,7 +22,7 @@ print "Downloading latest release: " + latest_release
 filename = latest_release.split('/')[-1]
 folder = filename.split('.tar.gz')[0]
 
-#os.popen("curl -O " + latest_release)
+os.popen("curl -O " + latest_release)
 
 print "Extracting to " + folder + " ... "
 os.popen("tar xzvf " + filename)
