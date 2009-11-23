@@ -49,9 +49,9 @@ make install
 cd ../
 gem install mongrel
 gem install mongrel_cluster
-wget http://www.lighttpd.net/download/lighttpd-1.4.23.tar.gz
-tar xzvf lighttpd-1.4.23.tar.gz 
-cd lighttpd-1.4.23
+wget http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.25.tar.gz
+tar xzvf lighttpd-1.4.25.tar.gz
+cd lighttpd-1.4.25
 ./configure
 ./configure
 ./configure
