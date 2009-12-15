@@ -33,12 +33,12 @@ make install
 cd ../
 cd rubygems-1.3.5
 ruby setup.rb 
-gem install gemcutter
+gem install gemcutter --no-rdoc
 gem tumble
-gem install mysql
-gem install rcov
-gem install rails
-gem install -v=2.3.3 rails
+gem install mysql  --no-rdoc
+gem install rcov --no-rdoc
+gem install rails --no-rdoc
+gem install -v=2.3.3 rails --no-rdoc
 cd ../
 wget http://kernel.org/pub/software/scm/git/git-1.6.4.4.tar.gz
 tar xzvf git-1.6.4.4.tar.gz 
@@ -47,8 +47,8 @@ cd git-1.6.4.4
 make
 make install
 cd ../
-gem install mongrel
-gem install mongrel_cluster
+gem install mongrel --no-rdoc
+gem install mongrel_cluster --no-rdoc
 wget http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.25.tar.gz
 tar xzvf lighttpd-1.4.25.tar.gz
 cd lighttpd-1.4.25

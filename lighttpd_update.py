@@ -25,7 +25,7 @@ folder = filename.split('.tar.gz')[0]
 output = os.popen("curl -O " + latest_release)
 
 print "Extracting to " + folder + " ... "
-os.popen("tar xzvf " + filename)
+output = os.popen("tar xzvf " + filename)
 
 # check for LUA
 check = os.popen("lighttpd -V | grep LUA").read().strip()[0]
