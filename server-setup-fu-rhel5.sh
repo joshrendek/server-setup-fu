@@ -20,41 +20,36 @@ yum -y install intltool
 yum -y install libxml*
 yum -y install pango*
 yum -y install libxml*
-yum -y install php*
 wget ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p174.tar.gz
 wget http://rubyforge.org/frs/download.php/60718/rubygems-1.3.5.tgz
 tar xzvf ruby-1.8.7-p174.tar.gz 
 tar xzvf rubygems-1.3.5.tgz 
 cd ruby-1.8.7-p174
 ./configure
-./configure 
 make
 make install
 cd ../
 cd rubygems-1.3.5
 ruby setup.rb 
-gem install gemcutter --no-rdoc
+gem install gemcutter --no-rdoc --no-ri
 gem tumble
-gem install mysql  --no-rdoc
-gem install rcov --no-rdoc
-gem install rails --no-rdoc
-gem install -v=2.3.3 rails --no-rdoc
+gem install mysql  --no-rdoc --no-ri
+gem install rcov --no-rdoc --no-ri
+gem install rails --no-rdoc --no-ri
 cd ../
-wget http://kernel.org/pub/software/scm/git/git-1.6.4.4.tar.gz
-tar xzvf git-1.6.4.4.tar.gz 
-cd git-1.6.4.4
+wget http://kernel.org/pub/software/scm/git/git-1.7.1.tar.gz
+tar xzvf git-1.7.1.tar.gz
+cd git-1.7.1
 ./configure
 make
 make install
 cd ../
-gem install mongrel --no-rdoc
-gem install mongrel_cluster --no-rdoc
-wget http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.25.tar.gz
-tar xzvf lighttpd-1.4.25.tar.gz
-cd lighttpd-1.4.25
-./configure
-./configure
-./configure
+gem install thin --no-rdoc --no-ri
+gem install mongrel --no-rdoc --no-ri
+gem install mongrel_cluster --no-rdoc --no-ri
+wget http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.26.tar.gz
+tar xzvf lighttpd-1.4.26.tar.gz
+cd lighttpd-1.4.26
 ./configure
 make
 make install
@@ -62,14 +57,4 @@ touch /var/log/lighttpd/error.log
 mkdir /var/log/lighttpd
 touch /var/log/lighttpd/error.log
 touch /var/log/lighttpd/access.log
-cd
-wget http://oss.oetiker.ch/rrdtool/pub/rrdtool-1.3.8.tar.gz
-tar xzvf rrdtool-1.3.8.tar.gz 
-cd rrdtool-1.3.8
-./configure
-make
-make install
-cd src
-cp rrdtool /usr/bin
-cp rrdupdate /usr/bin
 
