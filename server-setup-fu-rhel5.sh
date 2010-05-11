@@ -39,6 +39,7 @@ make
 make install
 cd ../
 gem install thin --no-rdoc --no-ri
+gem uninstall rack -v=1.1.0
 gem install mongrel --no-rdoc --no-ri
 gem install mongrel_cluster --no-rdoc --no-ri
 wget http://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-1.4.26.tar.gz
