@@ -20,22 +20,16 @@ yum -y install intltool
 yum -y install libxml*
 yum -y install pango*
 yum -y install libxml*
-wget ftp://ftp.ruby-lang.org/pub/ruby/1.8/ruby-1.8.7-p174.tar.gz
-wget http://rubyforge.org/frs/download.php/60718/rubygems-1.3.5.tgz
-tar xzvf ruby-1.8.7-p174.tar.gz 
-tar xzvf rubygems-1.3.5.tgz 
-cd ruby-1.8.7-p174
-./configure
-make
-make install
-cd ../
-cd rubygems-1.3.5
-ruby setup.rb 
-gem install gemcutter --no-rdoc --no-ri
-gem tumble
-gem install mysql  --no-rdoc --no-ri
-gem install rcov --no-rdoc --no-ri
-gem install rails --no-rdoc --no-ri
+yum -y install curl*
+cd ~
+curl http://github.com/bluescripts/server-setup-fu/raw/master/bash_profile > .bash_profile
+curl http://github.com/bluescripts/server-setup-fu/raw/master/bashrc > .bash_rc
+source .bash_profile
+source .bash_rc 
+wget http://rubyforge.org/frs/download.php/68719/ruby-enterprise-1.8.7-2010.01.tar.gz
+tar xzvf ruby-enterprise-1.8.7-2010.01.tar.gz
+cd ruby-enterprise-1.8.7-2010.01
+./installer -a /opt/ruby-enterprise-1.8.7-2010.01/
 cd ../
 wget http://kernel.org/pub/software/scm/git/git-1.7.1.tar.gz
 tar xzvf git-1.7.1.tar.gz
