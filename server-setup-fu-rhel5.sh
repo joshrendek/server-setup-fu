@@ -49,7 +49,6 @@ cd lighttpd-1.4.26
 ./configure
 make
 make install
-touch /var/log/lighttpd/error.log
 mkdir /var/log/lighttpd
 touch /var/log/lighttpd/error.log
 touch /var/log/lighttpd/access.log
