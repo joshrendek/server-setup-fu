@@ -21,6 +21,7 @@ yum -y install libxml*
 yum -y install pango*
 yum -y install libxml*
 yum -y install curl*
+yum -y install ImageMagic*
 cd ~
 curl http://github.com/bluescripts/server-setup-fu/raw/master/bash_profile > .bash_profile
 curl http://github.com/bluescripts/server-setup-fu/raw/master/bashrc > .bash_rc
