@@ -23,8 +23,8 @@ yum -y install libxml*
 yum -y install curl*
 yum -y install ImageMagic*
 cd ~
-curl http://github.com/bluescripts/server-setup-fu/raw/master/bash_profile > .bash_profile
-curl http://github.com/bluescripts/server-setup-fu/raw/master/bashrc > .bash_rc
+curl https://github.com/bluescripts/server-setup-fu/raw/master/bash_profile > .bash_profile
+curl https://github.com/bluescripts/server-setup-fu/raw/master/bashrc > .bash_rc
 source .bash_profile
 source .bash_rc 
 wget http://rubyforge.org/frs/download.php/68719/ruby-enterprise-1.8.7-2010.01.tar.gz
