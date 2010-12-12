@@ -19,7 +19,7 @@ yum -y install bzip*
 yum -y install intltool
 yum -y install libxml*
 yum -y install pango*
-yum -y install libxml*
+yum -y install libxml* libxslt*
 yum -y install curl*
 yum -y install ImageMagic*
 cd ~
@@ -27,10 +27,12 @@ curl https://github.com/bluescripts/server-setup-fu/raw/master/bash_profile > .b
 curl https://github.com/bluescripts/server-setup-fu/raw/master/bashrc > .bash_rc
 source .bash_profile
 source .bash_rc 
-wget http://rubyforge.org/frs/download.php/68719/ruby-enterprise-1.8.7-2010.01.tar.gz
-tar xzvf ruby-enterprise-1.8.7-2010.01.tar.gz
-cd ruby-enterprise-1.8.7-2010.01
-./installer -a /opt/ruby-enterprise-1.8.7-2010.01/
+wget ftp://ftp.ruby-lang.org//pub/ruby/1.9/ruby-1.9.2-p0.tar.gz
+tar xzvf ruby-1.9.2-p0.tar.gz
+cd ruby-1.9.2-p0
+./configure
+make
+make install
 cd ../
 wget http://kernel.org/pub/software/scm/git/git-1.7.1.tar.gz
 tar xzvf git-1.7.1.tar.gz
@@ -53,3 +55,4 @@ mkdir /var/log/lighttpd
 touch /var/log/lighttpd/error.log
 touch /var/log/lighttpd/access.log
 
+gem install rails
