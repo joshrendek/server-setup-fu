@@ -1,8 +1,9 @@
 #!/bin/bash
-# thanks to SpaceGhostC2C for several suggestions (irc.freenode)
+# thanks to SpaceGhostC2C for several suggestions (irc.freenode) including gemrc
 apt-get install curl
 curl https://github.com/bluescripts/server-setup-fu/raw/master/bash_profile > .bash_profile
 curl https://github.com/bluescripts/server-setup-fu/raw/master/bashrc > .bash_rc
+curl https://github.com/bluescripts/server-setup-fu/raw/master/gemrc > .gemrc
 apt-get install php5
 apt-get install php5-cli
 apt-get install git git-core
