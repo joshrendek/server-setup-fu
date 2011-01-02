@@ -18,5 +18,5 @@ rvm package install openssl
 rvm install 1.9.2 --with-openssl-dir=/usr/local/rvm/usr
 rvm --default ruby-1.9.2
 gem install passenger --no-rdoc --no-ri
-gem install rails --no-rdoc --no-ri
-gem install bundler --no-rdoc --no-ri
+gem install rails 
+gem install bundler 
