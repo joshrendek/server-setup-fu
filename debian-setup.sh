@@ -1,5 +1,5 @@
 #!/bin/bash
-# thanks to SpaceGhostC2C for several suggestions (irc.freenode) including gemrc
+# thanks to SpaceGhostC2C for several suggestions (github.com/SpaceGhost) including gemrc
 apt-get install curl
 curl https://github.com/bluescripts/server-setup-fu/raw/master/bash_profile > .bash_profile
 curl https://github.com/bluescripts/server-setup-fu/raw/master/bashrc > .bash_rc
