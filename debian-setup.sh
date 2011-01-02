@@ -20,5 +20,4 @@ rvm --default ruby-1.9.2
 gem install passenger --no-rdoc --no-ri
 gem install rails 
 gem install bundler 
-passenger-install-nginx-module --auto  --extra-configure-flags=--with_http_ssl --extra-configure-flags=--with-http_stub_status_module --auto-download
-
+passenger-install-nginx-module --auto  --extra-configure-flags=--with_http_ssl --extra-configure-flags=--with-http_stub_status_module --auto-download --prefix=/opt/nginx 
