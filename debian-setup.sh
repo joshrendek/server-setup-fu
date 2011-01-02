@@ -8,8 +8,7 @@ bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
 echo '[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"' >> .bash_profile
 source .bash_*
 apt-get install bzip2
-apt-get install gcc
-apt-get install make
+apt-get install build-essential
 apt-get install zlib1g-dev
 apt-get install libopenssl-ruby libcurl4-openssl-dev libssl-dev 
 rvm package install openssl
