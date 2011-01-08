@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 # thanks to SpaceGhostC2C for several suggestions (github.com/SpaceGhost) including gemrc
 apt-get install curl -y
 curl https://github.com/bluescripts/server-setup-fu/raw/master/bash_profile > .bash_profile
