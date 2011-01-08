@@ -14,7 +14,7 @@ apt-get install bzip2 -y
 apt-get install build-essential -y
 apt-get install zlib1g-dev -y
 apt-get install libopenssl-ruby libcurl4-openssl-dev libssl-dev -y
-rvm package install openssl -y
+rvm package install openssl 
 rvm install 1.9.2 --with-openssl-dir=/usr/local/rvm/usr
 rvm --default ruby-1.9.2
 gem install passenger --no-rdoc --no-ri
